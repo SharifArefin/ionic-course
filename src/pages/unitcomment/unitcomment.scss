@@ -1,0 +1,23 @@
+page-unitcomment {
+	span.reply {
+		background:#009dd8;
+		padding:3px 5px;
+		border-radius:3px;
+		color:#ffffff;
+	}
+}
+page-unitcomment ul.unit_comments {
+	list-style:none; 
+	padding: 0 0 0 10px;
+	border-left:1px solid rgba(0,0,0,0.05);
+	li{
+	    padding:10px 0 0;
+	    margin:5px;
+	    background:#ffffff;
+	    .children > ul{
+	     	padding-left:8px;
+	     	margin-left:8px;
+	    }
+	}
+}
+

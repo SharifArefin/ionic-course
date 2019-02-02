@@ -1,6 +1,9 @@
 {
   "name": "forkisma",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
-  "pro_id": "6b89448d"
+  "pro_id": "6b89448d",
+  "id": "6b89448d"
 }

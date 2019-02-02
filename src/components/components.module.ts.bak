@@ -1,0 +1,8 @@
+import { NgModule } from '@angular/core';
+import { CommentBlock } from './commentblock/commentblock';
+@NgModule({
+	declarations: [CommentBlock],
+	imports: [],
+	exports: [CommentBlock]
+})
+export class ComponentsModule {}

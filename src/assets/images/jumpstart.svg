@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Startup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<g>
+	<path style="fill:#ffffff;" d="M46,3.414V21h2V3.414l1.293,1.293l1.414-1.414l-3-3c-0.391-0.391-1.023-0.391-1.414,0l-3,3
+		l1.414,1.414L46,3.414z"/>
+	<path style="fill:#ffffff;" d="M55,23.414V41h2V23.414l1.293,1.293l1.414-1.414l-3-3c-0.391-0.391-1.023-0.391-1.414,0l-3,3
+		l1.414,1.414L55,23.414z"/>
+	<path style="fill:#ffffff;" d="M12,3.414V21h2V3.414l1.293,1.293l1.414-1.414l-3-3c-0.391-0.391-1.023-0.391-1.414,0l-3,3
+		l1.414,1.414L12,3.414z"/>
+	<path style="fill:#ffffff;" d="M3,23.414V41h2V23.414l1.293,1.293l1.414-1.414l-3-3c-0.391-0.391-1.023-0.391-1.414,0l-3,3
+		l1.414,1.414L3,23.414z"/>
+	<rect x="3" y="44" style="fill:#ffffff;" width="2" height="4"/>
+	<rect x="55" y="44" style="fill:#ffffff;" width="2" height="4"/>
+	<rect x="46" y="24" style="fill:#ffffff;" width="2" height="4"/>
+	<rect x="12" y="24" style="fill:#ffffff;" width="2" height="4"/>
+	<rect y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="4" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="8" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="12" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="16" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="46" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="42" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="50" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="54" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<rect x="58" y="54" style="fill:#ffffff;" width="2" height="2"/>
+	<path style="fill:#ffffff;" d="M36,50.713V47h12c0.352,0,0.679-0.186,0.859-0.488c0.18-0.303,0.188-0.678,0.02-0.988L36,21.747V11
+		c0-0.014-0.007-0.025-0.008-0.039c-0.004-0.104-0.025-0.206-0.062-0.305c-0.008-0.022-0.013-0.044-0.023-0.066
+		c-0.005-0.012-0.007-0.025-0.013-0.038l-5-10c-0.339-0.678-1.45-0.678-1.789,0l-5,10c-0.006,0.012-0.008,0.025-0.013,0.038
+		c-0.01,0.022-0.015,0.043-0.023,0.066c-0.036,0.099-0.057,0.201-0.062,0.305C24.007,10.975,24,10.986,24,11v10.747L11.121,45.524
+		c-0.168,0.31-0.16,0.685,0.02,0.988C11.321,46.815,11.647,47,12,47h12v3.713L19.446,58H0v2h60v-2H40.554L36,50.713z M34,22v24h-3
+		V12h3V22z M29,46h-3V22V12h3V46z M26,48h8v2h-8V48z M46.321,45H36v-3h5v-2h-5V25.946L46.321,45z M30,3.236L33.382,10h-6.764
+		L30,3.236z M13.679,45L24,25.946V40h-5v2h5v3H13.679z M25.554,52h8.892l3.75,6H31v-4h-2v4h-7.196L25.554,52z"/>
+</g>
+</svg>

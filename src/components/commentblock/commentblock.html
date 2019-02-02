@@ -1,0 +1,36 @@
+
+<div class="unit_comment">
+	<div class="comment_inside">
+		<div class="comment_header"  (click)="manageChildren()">
+
+			<a class="manage_children" *ngIf="show_hide == 1 && comment.child && comment.child.length"  title="config.get_translation('Hide_children')"><ion-icon name="ios-remove-circle-outline"></ion-icon></a>
+
+			<a class="manage_children" *ngIf="show_hide == 0 && comment.child && comment.child.length"  title="config.get_translation('Show_children')"><ion-icon name="ios-add-circle-outline"></ion-icon></a>
+
+
+			<div [ngClass]="{ 'comment_author': (comment.user_id != config.user.id), 'comment_author me': (comment.user_id == config.user.id) }">
+				<lazy-img [inputSrc]="comment.user.avatar"></lazy-img>
+				<span>{{comment.user.name}}</span>
+			</div>
+			<span><friendlytime [time]="time"></friendlytime></span>
+			<a class="reply" (click)="addReply(comment)">{{config.get_translation('Reply_comment')}}</a>
+
+			
+
+			<a class="edit right" *ngIf="config.user.id == comment.user_id " (click)="editReply()">{{config.get_translation('Edit_comment')}}</a>
+		</div>
+		<div [innerHtml]="comment.comment_content"></div>
+	</div>
+	<div class="children" *ngIf="comment.child && comment.child.length && show_hide">
+		<ul class="unit_comments">
+			<li *ngFor="let ccomment of comment.child; let i = index">	
+ 				<CommentBlock [comment]="ccomment"></CommentBlock>
+ 			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!-- && !comment.hasOwnProperty('loading') -->
+<!-- && !comment.hasOwnProperty('loading') -->

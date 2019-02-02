@@ -1,0 +1,27 @@
+
+<ion-header>
+  <ion-navbar  color="transparent" >
+        <ion-buttons start>
+            <button ion-button (click)="navCtrl.pop()">
+                <ion-icon name="md-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title *ngIf="(comment_id == 0)" >{{config.get_translation('Adding_new_comment')}}</ion-title>
+        <ion-title *ngIf="(type == 'reply')">{{config.get_translation('Replying_to_comment')}} : {{comment.user.name}} </ion-title>
+        <ion-title *ngIf="(type == 'edit')">{{config.get_translation('Editing_comment')}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <div class="comment_text_wrapper">
+    		<ion-textarea formControlName="comment_content" placeholder="{{config.get_translation('Enter_your_comment')}}" *ngIf="(type == 'reply') || (type=='new') " elastic></ion-textarea>
+
+    		<ion-textarea formControlName="comment_content"   *ngIf="(type == 'edit')" elastic>{{comment.comment_content}}</ion-textarea>
+        </div>
+		<button ion-button ion-full>{{config.get_translation('Submit_Comment')}}</button>
+	</form>
+	
+</ion-content>

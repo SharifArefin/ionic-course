@@ -1,0 +1,70 @@
+commentblock {
+	.edit,.reply,.manage_children{font-size:80%}
+	.reply{
+		float:right;
+		
+	}
+	.comment_inside{
+		border:1px solid rgba(0,0,0,0.05);
+		border-radius:5px 5px 0 0;
+	}
+	.comment_header {
+		width:100%;position:relative;
+		display:inline-block;
+		line-height:24px;
+	    background: rgba(0,0,0,0.05);
+	    padding: 6px;
+	    .manage_children{
+    	    font-size: 20px;
+		    margin-right: 10px;
+		    position: absolute;
+		    left: -25px;
+		    top: 25px;
+		    background:#fff;color:#aaa;
+	    }
+	    & + div{
+	    	padding: 6px;
+	    }
+	    &:after {
+		    content: '';
+		    width: 15px;
+		    height: 1px;
+		    background: rgba(0,0,0,0.05);
+		    position: absolute;
+		    left: -15px;
+		    bottom: 0;
+		}
+	}
+	.comment_author{
+	    display: grid;
+	    grid-template-columns: 24px 1fr;
+	    max-width: 50%;
+	    float: left;
+	    margin-right: 10px;
+	    align-items: center;
+	    grid-gap: 5px;
+	    img{
+	    	border-radius:50%;
+	    }
+	    &.me{
+	    	img{
+		        background: #0095ff;
+    			padding: 2px;
+	    	}
+	    }
+	    &.instructor{
+	    	img{
+		        background:#00cc00;
+    			padding: 2px;
+	    	}
+	    }
+	}
+	.edit.right{
+		float:right;
+		margin-right:3px;
+		&:after{
+			content:'|';
+			padding-left:3px;
+		}
+	}
+}

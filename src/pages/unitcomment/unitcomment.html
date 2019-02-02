@@ -1,0 +1,32 @@
+<ion-header>
+	  <ion-navbar>
+	    <ion-title>{{config.get_translation('Unitcomment')}}</ion-title>
+	  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button (click)="showCommentForm()">{{config.get_translation('Add_comment')}}</button> 
+	<div>
+		<ion-refresher (ionRefresh)="doRefresh($event)">
+		    <ion-refresher-content pullingText="{{config.get_translation('pull_to_refresh')}}"
+		      pullingIcon="arrow-dropdown"
+		      refreshingSpinner="circles"
+		      refreshingText="{{config.get_translation('refreshing')}}"></ion-refresher-content>
+	  	</ion-refresher>
+	  	<div *ngIf="notesanddiscussion.comments.length" >
+			<ul class="unit_comments"> 
+	 			<li *ngFor="let mcomment of formatComments(notesanddiscussion.comments); let i = index">	
+	 				<CommentBlock [comment]="mcomment"></CommentBlock>
+	 			</li>
+	 		</ul>
+	 		<ion-infinite-scroll *ngIf="!noMoreCommentsAvailable" (ionInfinite)="loadMoreComments($event)">
+	           <ion-infinite-scroll-content></ion-infinite-scroll-content>
+	        </ion-infinite-scroll>
+        </div>
+	    <div  *ngIf="!notesanddiscussion.comments.length">{{config.get_translation('No_comment_avail')}}</div>
+	</div>
+	
+	       
+
+</ion-content>
